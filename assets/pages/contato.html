@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <img src="../images/ajax.png" alt="" width="500px">
+    </header>
+    <nav>
+        <a href="../../index.html">Home</a> - 
+        <a href="../pages/msc.html">Músicas para programação</a> -
+        <a href="../pages/aulas.html">Aulas Grátis</a> -
+        <a href="../pages/planos.html">Planos</a> -
+        <a href="../pages/contato.html">Contato</a> -
+    </nav> <hr>
+    <main>
+        <section>
+            <h3>Dados para contato</h3>
+            <main>
+                <form action="cadastro.php" method="post">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" value="name" name="name" id="name" required placeholder="Digite seu nome...">
+                        <br><br>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" required placeholder="Digite seu e-mail...">
+                        <br><br>
+                    <label for="number">Telefone:</label>
+                    <input type="number" placeholder="Digite seu telefone..." required>
+                        <br><br>
+                    <label for="site">Como chegou ao nosso site?</label>
+                    <select name="site" id="site">
+                        <option value="" hidden></option>
+                        <option value="google">Google</option>
+                        <option value="amigos">Amigos</option>
+                        <option value="rede">Redes Sociais</option>
+                    </select>
+                        <br><br>
+                    <label for="texto">Deixe aqui sua mensagem:</label> <br>
+                    <textarea name="texto" id="texto" cols="40" rows="10" placeholder="Digite aqui uma mensagem..."></textarea>
+                </fieldset>
+                </form>
+        </section>
+    </main>
+</html>
